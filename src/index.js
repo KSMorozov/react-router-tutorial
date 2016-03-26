@@ -4,6 +4,7 @@ import { Router, Route, hashHistory } from 'react-router';
 import App from './App.js';
 import About from './components/About';
 import Repos from './components/Repos';
+import './main.css';
 
 ReactDOM.render((
   <Router history={ hashHistory }>

@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router';
+import NavLink from './components/NavLink';
 
 export default ({ children }) =>
   <div>
     <h1>React Router Tutorial</h1>
     <ul role="nav">
-      <li><Link to="/about">About</Link></li>
-      <li><Link to="/repos">Repos</Link></li>
+      <li><NavLink to="/">Home</NavLink></li>
+      <li><NavLink to="/about">About</NavLink></li>
+      <li><NavLink to="/repos">Repos</NavLink></li>
     </ul>
     {children}
   </div>;
